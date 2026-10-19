@@ -14,6 +14,7 @@
   <header>
     <h1>Minesweeper</h1>
     <p>9 × 9 board · 10 mines</p>
+    <button class="help-btn" id="helpBtn" type="button">How to play</button>
   </header>
 
   <div class="hud">
@@ -26,6 +27,24 @@
 
   <p class="hint" id="hint">Left click to reveal. Right click to flag.</p>
 </main>
+
+<div class="help-modal" id="helpModal" hidden>
+  <div class="help-backdrop" data-close></div>
+  <div class="help-dialog" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <button class="help-close" id="helpClose" type="button" aria-label="Close">×</button>
+    <h2 class="help-title" id="helpTitle">How to play</h2>
+    <p class="help-lede">Clear the whole field without setting off a mine. The numbers tell you how many mines touch each square.</p>
+    <ol class="help-steps">
+      <li>Left click a square to reveal it.</li>
+      <li>The first click is always safe, along with the squares around it.</li>
+      <li>Numbers count the mines touching that square, from one to eight.</li>
+      <li>Right click a square to place a flag on a suspected mine.</li>
+      <li>Reveal every safe square to win the round.</li>
+      <li>Clicking a mine ends the game. The face button restarts.</li>
+      <li>The timer at the top right tracks how long the round takes.</li>
+    </ol>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@ A classic 9 by 9 minesweeper board with ten mines, flags and a timer.
 ## Features
 
 - First click is always safe, including its neighbouring cells
+- A How to play popup explains the rules
 - Flood reveal for empty cells
 - Right click to flag and unflag a cell
 - Mine counter and a timer that starts on the first reveal
